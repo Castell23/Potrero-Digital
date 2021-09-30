@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+@font-face {
+    font-family: "poppins";
+    src: url(/fonts/Poppins-ExtraLight.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -11,11 +18,15 @@ header {
     justify-content: space-between;
     background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-    border-radius: 10px;
+    border-radius: 0.625em;
 }
 
 header h1 {
-    margin: 15px;
+    display: flex;
+    align-items: center;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    font-family: 'Roboto Slab', serif;
 }
 
 h3 {
@@ -25,7 +36,7 @@ h3 {
 .header-nav {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 a {
@@ -36,99 +47,91 @@ a {
 .header-nav ul li {
     list-style: none;
     display: inline;
-    padding: 15px;
-    margin: 10px;
-    justify-content: center;
+    padding: 0.5vw;
+    margin: 0.5vw;
 }
 
 .header-nav ul li:hover {
     cursor: pointer;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
-.titulo-receta {
+.tittle-subtittle-receta {
     display: flex;
-    justify-content: center;
-}
-
-.sub-receta {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "poppins";
 }
 
 .receta {
-    border-top:solid 1px grey;
+    border-top: solid  0.0625em grey;
     display: flex;
-    padding-bottom: 50px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 40px;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
 
 .img-receta {
-    height: 431px;
-    width: 600px;
-    border-radius: 5px;
+    width: 38vw;
+    border-radius: 0.3125em;
 }
 
 img:hover {
-    cursor: pointer;
     transform: scale(1.05);
 }
 
 .receta-aside li {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .receta-aside h3 {
-    font-size: 22px;
+    font-size: 1.375em;
 }
 
 .multimedia {
-    border-top: solid 1px grey;
-}
-
-.titulo-multimedia {
+    border-top: solid 0.0625em grey;
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4vh;
 }
 
 .video-multimedia {
-    padding-bottom: 40px;
-    padding-left: 100px;
+    height: 50vh;
+    width: 50vw;
+    margin: 0 auto;
 }
 
 .jujuy {
-    border-top: solid 1px grey;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 5px;
+    border-top: solid 0.0625em grey;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .aside-mapa {
-    width: 400px;
-    height: 500px;
-    padding-right: 10px;
-    padding-left: 5px;
+    width: 50vw;
+    margin: 0.5vw;
+}
+
+.mapa {
+    width: 50vw;
+    height: 50vh;
+    margin: 0.5vw;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    border-radius: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 23px;
+    border-radius: 0.625em;
+    padding: 1.5vh;
+    font-size: 1.4375em;
     color: #112031;
     background-image: linear-gradient( 178.9deg,  rgba(176,57,105,1) 5.1%, rgba(229,113,159,1) 109.3% );
 }
